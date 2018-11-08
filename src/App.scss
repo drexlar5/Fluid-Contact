@@ -28,9 +28,12 @@ body {
   clear: both;
 }
 
+
+/* Navbar */
 nav {
   background: rgb(62, 62, 189);;
 }
+
 
 .icon-bar {
   margin-top: 23px;
@@ -43,6 +46,26 @@ nav {
   float: left;
 }
 
+
+/* Aside  */
+.icon-side {
+  margin-top: 5px;
+  margin-right: 25px;
+  margin-left: 25px;
+  float: left;
+}
+
+.side-nav {
+  margin-top: 15px;
+}
+
+.side-link {
+  float: left;
+  clear: both;
+}
+
+
+/* Search */
 .search-form {
   flex: 1;
   background: blue;
@@ -61,6 +84,22 @@ nav {
     margin-right: -55px;
     float: left;
   }
+}
+
+/* Contact Table */
+
+td {
+  padding: 20px;
+}
+
+.i-space {
+  margin-left: 10px;
+}
+
+.td-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
 }
 
 @keyframes App-logo-spin {
