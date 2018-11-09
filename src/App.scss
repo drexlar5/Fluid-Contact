@@ -1,0 +1,189 @@
+$fab-color: #ed5249;
+$fab-size: 64px;
+$fab-margin: 1 / 4 * 3 * $fab-size;
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: whitesmoke;
+}
+
+.fit {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  float: right;
+  clear: both;
+}
+
+
+/* Navbar */
+nav {
+  background: rgb(62, 62, 189);;
+}
+
+
+.icon-bar {
+  margin-top: 23px;
+  margin-right: 45px;
+  float: left;
+}
+
+.brand-name {
+  margin-top: 15px;
+  float: left;
+}
+
+
+/* Aside  */
+.icon-side {
+  margin-top: 5px;
+  margin-right: 25px;
+  margin-left: 25px;
+  float: left;
+}
+
+.side-nav {
+  margin-top: 15px;
+}
+
+.side-link {
+  float: left;
+  clear: both;
+}
+
+
+/* Search */
+.search-form {
+  flex: 1;
+  background: blue;
+  border-radius: 12px;
+  .search {
+    width: 90%;
+    float: left;
+    background: blue;
+    border: none;
+  }
+  .search-icon{
+    width: 10%;
+    padding-top: 2px;
+    height: 35px;
+    margin-top: 5px;
+    margin-right: -55px;
+    float: left;
+  }
+}
+
+/* Contact Table */
+
+td {
+  padding: 20px;
+}
+
+.i-space {
+  margin-left: 20px;
+}
+
+.td-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+}
+
+/* Add Modal */
+
+.form-control::placeholder {
+
+  color: #6c757d;
+  opacity: 1;
+
+}
+
+.form-control {
+
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+input {
+  overflow: visible;
+}
+
+.modal-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+}
+
+select {
+  width: 60px;
+  margin-top: .25rem;
+}
+
+/* Floating Action Button */
+
+.fab {
+	background: $fab-color;
+	width: $fab-size;
+	height: $fab-size;
+	border-radius: 50%;
+  text-align: center;
+	color: #FFF;
+	box-shadow:0px 0px 3px rgba(0,0,0,0.5),3px 3px 3px rgba(0,0,0,0.25);
+  position: fixed;
+	bottom: $fab-margin;
+	right: $fab-margin;
+	font-size: 2.6667em;
+	display: inline-block;
+	cursor: default;
+}
+
+.fab span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top:  - $fab-margin / 1.5;    
+  margin-left:  - $fab-margin / 4; 
+}
+
+/* Edit contact */
+ 
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
