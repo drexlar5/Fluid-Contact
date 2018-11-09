@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import user from '../user.png'
 import '../App.scss';
 import '../float.css'
-import Countries from './../components/SelectCountry';
+import Countries from '../components/SelectCountry';
 
 class Add extends Component {
   render() {
     return (
       <div>
-        <button type="button" className="btn btn-danger fab" data-toggle="modal" data-target="#exampleModalCenterAdd">
-        <span>+</span>
+        <button  className="btn btn-danger fab" data-toggle="modal" data-target="#exampleModalCenter">
+          <span>+</span>
         </button>
 
-        <div className="modal fade bd-example-modal-lg" id="exampleModalCenterAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div className="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div className="modal-content">
               <div className="modal-header">

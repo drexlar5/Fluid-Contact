@@ -51,7 +51,7 @@ class Body extends Component {
                     <td >
                       <div className="row">
                         <i className="far fa-star i-space mt-1"></i>
-                        <Edit className="" />
+                        <Edit />
                         <i className="fas fa-ellipsis-v i-space mt-1"></i>
                       </div>
                     </td>
@@ -63,8 +63,7 @@ class Body extends Component {
                     <td><h5></h5></td>
                     <td>+2348135434096</td>
                     {/* <td><i className="far fa-star i-space"></i><i className="fas fa-pencil-alt i-space"></i><i className="fas fa-ellipsis-v i-space"></i></td> */}
-                  </tr>
-                  
+                  </tr>                  
                 </tbody>
               </table>
             </div>
