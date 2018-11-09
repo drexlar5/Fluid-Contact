@@ -4,19 +4,17 @@ import '../App.scss';
 import '../float.css'
 import Countries from './../components/SelectCountry';
 
-class Add extends Component {
+class Edit extends Component {
   render() {
     return (
       <div>
-        <button type="button" className="btn btn-danger fab" data-toggle="modal" data-target="#exampleModalCenterAdd">
-        <span>+</span>
-        </button>
+        <i  className="fas fa-pencil-alt i-space" data-toggle="modal" data-target="#exampleModalCenter"></i>
 
-        <div className="modal fade bd-example-modal-lg" id="exampleModalCenterAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div className="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLongTitle">Create Contact</h5>                
+                <h5 className="modal-title" id="exampleModalLongTitle">Edit Contact</h5>                
               </div>
               <div className="modal-body">
                 <form>
@@ -44,19 +42,27 @@ class Add extends Component {
                   </div>
                   <div className="row ml-4">
                     <i class="fas fa-envelope mr-5"></i>
-                    <div className="form-group col-10">                      
+                    <div className="form-group col-5">                      
                       <input id="inputEmail" type="email" className="form-control form-width" placeholder="Email"/>
                       <label for="inputEmail">Email</label>
                     </div>
+                    <div className="form-group col-5">
+                      <input id="inputLabel" type="text" className="form-control form-width-half" placeholder="Label"/>
+                      <label for="inputLabel">Label</label>
+                    </div>
                   </div>
-                  <div className="row ml-4">
+                  <div className="row ml-4 ">
                     <i class="fas fa-phone mr-5"></i>
                     <div className="col-1">
                       <Countries />
                     </div>
-                    <div className="form-group col-9">                      
+                    <div className="form-group col-4">                      
                       <input id="inputPhone" type="text" className="form-control form-width" placeholder="Phone"/>
                       <label for="inputPhone">Phone</label>
+                    </div>
+                    <div className="form-group col-5">
+                      <input id="inputMobile" type="text" className="form-control form-width-half" placeholder="Mobile"/>
+                      <label for="inputMobile">Mobile</label>
                     </div>
                   </div>
                   <div className="row ml-4">
@@ -82,4 +88,4 @@ class Add extends Component {
   }
 }
 
-export default Add;
+export default Edit;
